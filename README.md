@@ -18,8 +18,6 @@
 
 <br>
 
-![📟](https://res.cloudinary.com/ydevcloud/image/upload/v1656874185/asm9cp84cbuuqmarw9wq.png)
-
 If you are using [KeePass](https://keepass.info/) or [KeePassXC](https://keepassxc.org/) this script is simply backup your `Database File` to your telegram account, it's will backup your db every week.
 
 ![⚙️](https://res.cloudinary.com/ydevcloud/image/upload/v1656874522/fmfktytvymbnnc0fg4zz.png)
