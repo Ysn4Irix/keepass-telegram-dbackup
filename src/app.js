@@ -3,7 +3,7 @@ const { createReadStream } = require('fs')
 const { basename } = require('path')
 
 //! chat_id is the id of the telegram account chat use ur own
-const { apiUrl, token, chat_id, db_path } = require('./config.json')
+const { apiUrl, token, chat_id, db_path } = require('../config.json')
 
 const url = `${apiUrl}${token}/sendDocument`
 

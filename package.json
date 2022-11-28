@@ -2,12 +2,12 @@
   "name": "keepass-telegram-dbackup",
   "version": "1.0.0",
   "description": "A simple node application for recursively backup your KeePass Database file directly to your telegram",
-  "main": "app.js",
+  "main": "src/app.js",
   "license": "MIT",
   "scripts": {
-    "start": "node app.js",
-    "install-win": "node install-windows-service.js",
-    "uninstall-win": "node uninstall-windows.service.js"
+    "start": "node src/app.js",
+    "install-win": "node src/install-windows-service.js",
+    "uninstall-win": "node src/uninstall-windows.service.js"
   },
   "keywords": [
     "nodejs",
@@ -23,10 +23,6 @@
     "email": "ysn4irix@gmail.com",
     "url": "https://ysnirix.live"
   },
-  "files": [
-    "index.js",
-    "config.json"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ysn4Irix/keepass-telegram-dbackup.git"
