@@ -1,0 +1,6 @@
+{
+  "token": "your bot token",
+  "apiUrl": "https://api.telegram.org/bot",
+  "db_path": "your KeePass database file path",
+  "chat_id": "your chat id"
+}
