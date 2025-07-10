@@ -7,18 +7,18 @@ const { apiUrl, token, chat_id, db_path } = require('../config.json')
 
 const url = `${apiUrl}${token}/sendDocument`
 
-setInterval(() => {
-  let r = request(url, (err, _, body) => {
-    if (err) console.log(err)
-    console.log(body)
-  })
+//setInterval(() => {
+let r = request(url, (err, _, body) => {
+  if (err) console.log(err)
+  console.log(body)
+})
 
-  let f = r.form()
+let f = r.form()
 
-  f.append('chat_id', chat_id)
+f.append('chat_id', chat_id)
 
-  const filename = `${basename(db_path)}_${new Date().toISOString()}`
-  f.append('document', createReadStream(db_path), {
-    filename,
-  })
-}, 604800000) //* 604800000 is equivalent to one week in milliseconds
+const filename = `${basename(db_path)}_${new Date().toISOString()}`
+f.append('document', createReadStream(db_path), {
+  filename,
+})
+//}, 604800000) //* 604800000 is equivalent to one week in milliseconds
